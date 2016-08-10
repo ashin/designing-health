@@ -4,34 +4,42 @@ $blue = #6ac5c0;
 $lightBlue = #87d5c7;
 $lightestBlue = #e1f4f0;
 
+$break = 850px;
+
 .container {
-	display: flex;
-	margin:25px 0 30px;
+
+	@media (min-width: $break) {
+		display: flex;
+		justify-content: space-between;
+		margin:25px 0 30px 0;
+	}
 }
 	.cta {
-		width:50%;
-		padding-left:10%;
-		flex:0 auto;
 		font-size: 23px;
 		margin: 8px 5px;
 		line-height: 30px;
 		color: $darkestBlue;
 		font-weight: 600;
+		@media (min-width: $break) {
+			flex:1 auto;
+		}
     }
-	.link {
-		display: block;
-		color: $darkBlue;
-		text-decoration: none;
-	}
+		.link {
+			display: block;
+			color: $darkBlue;
+			text-decoration: none;
+		}
 
 	.associates {
-		width:50%;
-		flex:0 auto;
+		@media (min-width: $break) {
+			width:55%;
+			flex:0 auto;
+		}
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		list-style: none;
-		padding: 20px 20px 0 0;
+		padding: 20px 20px 0 10px;
 		margin: 0;
 	}
 		.associate {
@@ -39,7 +47,6 @@ $lightestBlue = #e1f4f0;
 			padding: 0;
 			margin: 0;
 			flex:0 auto;
-			width:25%;
 			
 		}
 			.associateLink {}

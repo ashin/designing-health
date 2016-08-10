@@ -4,19 +4,29 @@ $blue = #6ac5c0;
 $lightBlue = #87d5c7;
 $lightestBlue = #e1f4f0;
 
+$desktop = 1120px;
+
 .container {
-	height:1050px;
-	padding-left: 130px;
+	padding-bottom: 30px;
+	@media (min-width: $desktop) {
+		height:1050px;
+		padding: 0;
+	}
 }
 .info {
-	height:175px;
+	@media (min-width: $desktop) {
+		height:175px;
+	}
 }
 	.length {
 		display: block;
 		font-size:19px;
 		line-height:40px;
-		padding:26px 0 8px;
 		color: $blue;
+
+		@media (min-width: $desktop) {
+			padding:26px 0 8px;
+		}		
 	}
 	.day {
 		display: block;
@@ -31,8 +41,12 @@ $lightestBlue = #e1f4f0;
 		color: $darkBlue;
 	}
 .name {
-	height:665px;
-	padding-top:50px;
+	@media (min-width: $desktop) {
+		height:665px;
+		padding:50px 0 0;
+	}
+	padding:30px 0;
+	margin-left:-10px;
 }
 	.nameLine {
 		display: block;
@@ -64,6 +78,9 @@ $lightestBlue = #e1f4f0;
 		display: block;
 		font-size:42px;
 		line-height:50px;
-		margin-left:45%;
 		color: $darkBlue;
+		@media (min-width: $desktop) {
+			margin-left:45.5%;
+			padding-left:10px;
+		}
 	}

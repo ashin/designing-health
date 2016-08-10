@@ -4,16 +4,24 @@ $blue = #6ac5c0;
 $lightBlue = #87d5c7;
 $lightestBlue = #e1f4f0;
 
+$desktop = 1120px;
+$lappy = 740px;
+$tablet = 620px;
+
 .container {
-	padding-left: 130px;
 }
 .title {
 	text-transform: uppercase;
 	font-size: 18px;
-	font-size: 400;
 	line-height:18px;
 	margin-bottom: 17px;
 	color: $darkBlue;
+	margin-top: 20px;
+
+	@media (min-width: $desktop) {
+		margin-top: 0;
+	}
+
 }
 .list {
 	margin:0;
@@ -21,36 +29,56 @@ $lightestBlue = #e1f4f0;
 	list-style:none;
 }
 	.listItem {
-		padding:0;
+		padding:0 0 20px;
 		list-style: none;
-		display: flex;
 		margin-bottom: 14px;
+		display: flex;
+		flex-wrap: wrap;
+		@media (min-width: $desktop) {
+			padding:0;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+
 	}
 		.listInfo {
-			width:22%;
-			padding-right: 2%;
 			flex:0 auto;
+			order: 2;
+			width:230px;
+			@media (min-width: $desktop) {
+				order: unset;
+			}
 		}
 
-		.listTitle {
-			font-size: 48px;
-			line-height: 50px;
-			margin:10px 0 20px;
-			color: $darkBlue;
-		}
+			.listTitle {
+				font-size: 48px;
+				line-height: 50px;
+				color: $darkBlue;
+				@media (min-width: $desktop) {
+					margin:10px 0 20px;
+				}
+			}
 
-		.listCountry {
-			font-size: 23px;
-			line-height: 32px;
-			color: $darkBlue;
-			font-weight: 600;
-		}
+			.listCountry {
+				font-size: 23px;
+				line-height: 32px;
+				color: $darkBlue;
+				font-weight: 600;
+			}
 	.imgWrapper {
-		width:18%;
 		flex:0 auto;
+		order: 1;
+		margin-right:20px;
+
+		@media (min-width: $desktop) {
+			width:200px;
+			margin:0;
+			order: unset;
+		}
 	}
 		.img {
 			margin:15px auto;
+			display: block;
 			overflow: hidden;
 			border-radius: 50%;
 			width:192px;
@@ -58,25 +86,44 @@ $lightestBlue = #e1f4f0;
 		}
 
 	.info {
-		width:60%;
-		padding:0 20px 0 50px;
 		flex:0 auto;
+		width:100%;
+		order: 3;
+		@media (min-width: $desktop) {
+			width:auto;
+			max-width:610px;
+			order: unset;
+		}
 	}
 		.infoTitle {
 			margin:8px 0;
-			padding-left: 10px;
 			font-size:20px;
 			line-height:24px;
 			color: $darkBlue;
+
+			@media (min-width: $desktop) {
+				padding-left: 10px;
+			}
 		}
 		.infoText {
-			display: flex;
-			justify-content: space-between;
+			@media (min-width: $lappy) {
+				display: flex;
+				justify-content: space-between;
+			}
 		}
 		.infoPara {
-			flex-grow: 0;
-			flex-basis: 34%;
-			font-size: 12px;
-			line-height: 16.5px;
-			padding: 0 10px;
+			font-size: 14px;
+			line-height:20px;
+			padding: 0 0 10px;
+			
+			@media (min-width: $lappy) {
+				font-size: 12px;
+				line-height: 16.5px;
+				flex-basis: 34%;
+				flex-grow: 0;
+				padding: 0 10px 10px;
+			}
+			@media (min-width: $desktop) {
+				padding:0 10px 10px;
+			}
 		}

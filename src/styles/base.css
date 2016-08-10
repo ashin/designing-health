@@ -10,7 +10,6 @@ $lightestBlue = #dff0f1;
 	color: $blue;
 }
 body {
-	background: $lightestBlue;
 	font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5 { margin:0; }

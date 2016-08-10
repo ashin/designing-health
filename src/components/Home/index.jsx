@@ -13,10 +13,12 @@ export const Home = React.createClass({
   render: function() {
     const { setBeerState } = this.props;
     return (
-      <div className={s.container}>
-        <Header />
-        <Body />
-        <Footer />
+      <div className={s.wrapper}>
+        <div className={s.container}>
+          <Header />
+          <Body />
+          <Footer />
+        </div>
       </div>
     );
   }

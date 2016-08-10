@@ -19,9 +19,7 @@ export default React.createClass({
 		        <span className={s.listCountry}>USA</span>
 		      </div>
 		      <div className={s.imgWrapper}>
-		        <div className={s.imgContainer}>
 		          <img src={image1} className={s.img} />
-		        </div>
 		      </div>
 		      <div className={s.info}>
 		        <h5 className={s.infoTitle}>

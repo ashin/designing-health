@@ -39,6 +39,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "file-loader": "^0.9.0",
     "immutable": "^3.8.1",
     "normalize-styl": "^3.0.3",
     "react-addons-pure-render-mixin": "^15.0.2",
