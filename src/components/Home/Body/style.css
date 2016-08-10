@@ -1,0 +1,82 @@
+$darkestBlue = #387681;
+$darkBlue = #4ab3ac;
+$blue = #6ac5c0;
+$lightBlue = #87d5c7;
+$lightestBlue = #e1f4f0;
+
+.container {
+	padding-left: 130px;
+}
+.title {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-size: 400;
+	line-height:18px;
+	margin-bottom: 17px;
+	color: $darkBlue;
+}
+.list {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+	.listItem {
+		padding:0;
+		list-style: none;
+		display: flex;
+		margin-bottom: 14px;
+	}
+		.listInfo {
+			width:22%;
+			padding-right: 2%;
+			flex:0 auto;
+		}
+
+		.listTitle {
+			font-size: 48px;
+			line-height: 50px;
+			margin:10px 0 20px;
+			color: $darkBlue;
+		}
+
+		.listCountry {
+			font-size: 23px;
+			line-height: 32px;
+			color: $darkBlue;
+			font-weight: 600;
+		}
+	.imgWrapper {
+		width:18%;
+		flex:0 auto;
+	}
+		.img {
+			margin:15px auto;
+			overflow: hidden;
+			border-radius: 50%;
+			width:192px;
+			height:192px;
+		}
+
+	.info {
+		width:60%;
+		padding:0 20px 0 50px;
+		flex:0 auto;
+	}
+		.infoTitle {
+			margin:8px 0;
+			padding-left: 10px;
+			font-size:20px;
+			line-height:24px;
+			color: $darkBlue;
+		}
+		.infoText {
+			display: flex;
+			justify-content: space-between;
+		}
+		.infoPara {
+			flex-grow: 0;
+			flex-basis: 34%;
+			font-size: 12px;
+			line-height: 16.5px;
+			padding: 0 10px;
+		}

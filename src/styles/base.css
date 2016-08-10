@@ -1,0 +1,17 @@
+@import '../../node_modules/normalize-styl/normalize'
+$darkestBlue = #387681;
+$darkBlue = #4ab3ac;
+$blue = #6ac5c0;
+$lightBlue = #87d5c7;
+$lightestBlue = #dff0f1;
+
+* {
+	box-sizing: border-box;
+	color: $blue;
+}
+body {
+	background: $lightestBlue;
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5 { margin:0; }
+ul, ol, dl, dt, dd, li { margin: 0; padding:0; list-style: none; }

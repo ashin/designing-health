@@ -1,0 +1,14 @@
+$darkestBlue = #387681;
+$darkBlue = #4ab3ac;
+$blue = #6ac5c0;
+$lightBlue = #87d5c7;
+$lightestBlue = #e1f4f0;
+
+.container {
+	width:1280px;
+	max-width:1280px;
+	height:1810px;
+	margin: 0 auto;
+	background:url('./bg.png') no-repeat top center;
+	background-size: contain;
+}
