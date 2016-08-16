@@ -14,15 +14,13 @@ export default React.createClass({
           <span className={s.location}>Stamford Grand, Adelaide SA</span>
         </h2>
         <h1 className={s.name}>
-          <span className={s.nameLine}>De–</span>
-          <span className={s.nameLine}>sign–</span>
-          <span className={s.nameLine}>ing</span>
+          <span className={s.nameLine}>De<span className={s.nameHyphen}>–</span></span><span className={s.nameLine}>sign<span className={s.nameHyphen}>–</span></span><span className={s.nameLine}>ing</span>
           <span className={s.nameLine}>Health</span>
         </h1>
         <h3 className={s.blurbs}>
-          <span className={s.blurb}>Insights from</span>
-          <span className={s.blurb}>Design Thinking,</span>
-          <span className={s.blurb}>Operations Research</span>
+          <span className={s.blurb}>Insights from </span>
+          <span className={s.blurb}>Design Thinking, </span>
+          <span className={s.blurb}>Operations Research </span>
           <span className={s.blurb}>and Systems Thinking</span>
         </h3>
       </div>

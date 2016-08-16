@@ -51,19 +51,29 @@ $tablet = 620px;
 		}
 
 			.listTitle {
-				font-size: 48px;
-				line-height: 50px;
 				color: $darkBlue;
+				
+				font-size: 38px;
+				line-height: 40px;
+
+				@media (min-width: $tablet) {
+					font-size: 48px;
+					line-height: 50px;
+				}
 				@media (min-width: $desktop) {
 					margin:10px 0 20px;
 				}
 			}
 
 			.listCountry {
-				font-size: 23px;
+				font-weight: normal;
+				font-size: 20px;
 				line-height: 32px;
 				color: $darkBlue;
-				font-weight: 600;
+				@media (min-width: $tablet) {
+					font-size: 23px;
+					font-weight: 600;						
+				}
 			}
 	.imgWrapper {
 		flex:0 auto;
@@ -81,8 +91,12 @@ $tablet = 620px;
 			display: block;
 			overflow: hidden;
 			border-radius: 50%;
-			width:192px;
-			height:192px;
+			width:96px;
+			height:96px;
+			@media (min-width: $tablet) {
+				width:192px;
+				height:192px;
+			}
 		}
 
 	.info {
@@ -97,10 +111,12 @@ $tablet = 620px;
 	}
 		.infoTitle {
 			margin:8px 0;
-			font-size:20px;
+			font-size:14px;
 			line-height:24px;
 			color: $darkBlue;
-
+			@media (min-width: $tablet) {
+				font-size:20px;
+			}
 			@media (min-width: $desktop) {
 				padding-left: 10px;
 			}

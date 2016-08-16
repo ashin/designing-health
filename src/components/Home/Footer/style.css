@@ -5,6 +5,7 @@ $lightBlue = #87d5c7;
 $lightestBlue = #e1f4f0;
 
 $break = 850px;
+$tablet = 620px;
 
 .container {
 
@@ -15,11 +16,18 @@ $break = 850px;
 	}
 }
 	.cta {
-		font-size: 23px;
+		font-size: 14px;
+		line-height: 20px;
+
 		margin: 8px 5px;
-		line-height: 30px;
 		color: $darkestBlue;
 		font-weight: 600;
+		
+		@media (min-width: $tablet) {
+			font-size: 23px;
+			line-height: 30px;
+		}
+
 		@media (min-width: $break) {
 			flex:1 auto;
 		}
@@ -31,16 +39,21 @@ $break = 850px;
 		}
 
 	.associates {
-		@media (min-width: $break) {
-			width:55%;
-			flex:0 auto;
-		}
+		
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		list-style: none;
-		padding: 20px 20px 0 10px;
+		padding: 10px 0;
 		margin: 0;
+
+		@media (min-width: $tablet) {
+			padding: 20px 20px 0 10px;
+		}
+		@media (min-width: $break) {
+			width:55%;
+			flex:0 auto;
+		}
 	}
 		.associate {
 			list-style: none;
@@ -51,5 +64,8 @@ $break = 850px;
 		}
 			.associateLink {}
 			.associateImg {
-				zoom:50%;
+				zoom: 30%;
+				@media (min-width: $tablet) {
+					zoom:50%;
+				}
 			}

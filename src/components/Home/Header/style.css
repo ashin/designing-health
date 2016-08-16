@@ -4,10 +4,15 @@ $blue = #6ac5c0;
 $lightBlue = #87d5c7;
 $lightestBlue = #e1f4f0;
 
+$underTablet = 619px;
+$tablet = 620px;
 $desktop = 1120px;
 
 .container {
-	padding-bottom: 30px;
+	padding-bottom: 15px;
+	@media (min-width: $tablet) {
+		padding-bottom: 30px;
+	}
 	@media (min-width: $desktop) {
 		height:1050px;
 		padding: 0;
@@ -19,66 +24,127 @@ $desktop = 1120px;
 	}
 }
 	.length {
-		display: block;
-		font-size:19px;
-		line-height:40px;
-		color: $blue;
 
+		display: block;
+		color: $blue;
+		@media (max-width: $underTablet) {
+			font-size: 14px;
+	    	line-height: 16px;
+	    	padding-top: 10px;
+	    	font-weight: normal;
+	    	display: inline-block;
+	    	margin-right: 10px;
+	    }
+		
+		@media (min-width: $tablet) {
+			font-size:19px;
+			line-height:40px;
+		}
 		@media (min-width: $desktop) {
 			padding:26px 0 8px;
 		}		
 	}
 	.day {
 		display: block;
-		font-size: 32px;
-		line-height: 44px;
-		padding-top: 5px;
 		color: $darkestBlue;
+		@media (max-width: $underTablet) {
+			font-size: 14px;
+    		line-height: 26px;
+    		font-weight: normal;
+    		display: inline-block;	
+	    }
+	    
+	    @media (min-width: $tablet) {
+			font-size: 32px;
+			line-height: 44px;
+			padding-top: 5px;
+		}
 	}
 	.location {
 		display: block;
 		text-transform: uppercase;
 		color: $darkBlue;
+		@media (max-width: $underTablet) {
+			font-size: 16px;
+	    }
 	}
 .name {
+	padding: 50px 0 10px;
+
+	@media (min-width: $tablet) {
+		padding:30px 0;
+		margin-left:-10px;
+	}
 	@media (min-width: $desktop) {
 		height:665px;
 		padding:50px 0 0;
+
 	}
-	padding:30px 0;
-	margin-left:-10px;
 }
 	.nameLine {
-		display: block;
-		width:460px;
-		font-size:150px;
-		line-height:127px;
-		letter-spacing: -5px;
+	
+		font-size: 55px;
+	    line-height: 60px;
+
+		@media (min-width: $tablet) {
+			display: block;
+			width:460px;
+			font-size:150px;
+			line-height:127px;
+			letter-spacing: -5px;
+		}
 
 		&:nth-of-type(4n+1) {
-			color: $lightBlue;
+			@media (min-width: $tablet) {
+				color: $lightBlue;
+			}
 		}
 		&:nth-of-type(4n+2) {
-			color: $blue;
-			padding-bottom:15px;
+			@media (min-width: $tablet) {
+				color: $blue;
+				padding-bottom:15px;
+			}
 		}
 		&:nth-of-type(4n+3) {
-			color: $darkBlue;
-			padding-bottom:40px;
+			@media (min-width: $tablet) {
+				color: $darkBlue;
+				padding-bottom:40px;
+			}
 		}
 		&:nth-of-type(4n) {
 			color: $darkestBlue;
+			display: block;
+		}
+	}
+	.nameHyphen {
+		display:none;
+		@media (min-width: $tablet) {
+			display: inline;
 		}
 	}
 .blurbs {
-	height:210px;
-	padding-top:10px;
+	padding-bottom:70px;
+	@media (max-width: $underTablet) {
+		max-width:280px;
+	}
+	@media (min-width: $tablet) {
+		height:210px;
+		padding:10px 0 0 0;
+	}
 }
 	.blurb {
-		display: block;
-		font-size:42px;
-		line-height:50px;
+
 		color: $darkBlue;
+		font-weight: normal;
+		font-size:18px;
+		line-height:30px;
+
+		@media (min-width: $tablet) {
+			display: block;
+			font-weight:bold;
+			font-size:42px;
+			line-height:50px;
+		}
 		@media (min-width: $desktop) {
 			margin-left:45.5%;
 			padding-left:10px;
