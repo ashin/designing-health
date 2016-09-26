@@ -11,6 +11,7 @@ export default React.createClass({
 		  <div className={s.cta}>
 		    Register now at
 		    <a className={s.link} href="//pay.flinders.edu.au/som" target="_blank">pay.flinders.edu.au/som</a>
+	    	<a className={s.bottomLink} href="/Program.pdf" target="_blank">Download the program</a>		    	
 		  </div>
 		  <ul className={s.associates}>
 		    <li className={s.associate}>
